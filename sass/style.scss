@@ -1,0 +1,30 @@
+@import "base/_variables";
+@import "base/mixins";
+@import "base/animation";
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/title";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+
+
+*{
+  font-family: 'Museo Sans Cyrl 500', sans-serif ;
+}
+
+.container{
+  position: relative;
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+

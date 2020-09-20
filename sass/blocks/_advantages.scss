@@ -1,0 +1,97 @@
+.advantages{
+    padding: 68px 0px 78px 0px;
+    background-color: #f6f6f6;
+
+    &__items{
+        display: flex;
+        padding-top: 65px;
+        justify-content: space-between;
+
+    }
+    &__item{
+        width: 240px;
+        text-align: center;
+    }
+    &__main-text{
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 35px;
+    }
+    &__text{
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 25px;
+        a{
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        &_animated{
+            animation-name: heartbeat;
+            animation-duration: 1.25s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .advantages{
+
+        &__items{
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .advantages{
+        &__items{
+            display: flex;
+            padding-top: 50px;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+    
+        }
+        &__item{
+            padding-top: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        &__main-text{
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        &__text{
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 15px;
+            a{
+                color: #ff0000;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px){
+    .advantages{
+        padding: 50px 0px 78px 0px;
+        &__items{
+            display: flex;
+            padding-top: 30px;
+}
+    }
+}
